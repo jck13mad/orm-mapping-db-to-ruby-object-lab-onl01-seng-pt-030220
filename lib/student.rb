@@ -86,9 +86,9 @@ class Student
   
   def self.first_X_students_in_grade_10(x)
     sql = <<-SQL
-       SELECT students.id FROM students WHERE grade = 10 LIMIT ?
+       SELECT students FROM students WHERE grade = 10 LIMIT ?
     SQL
-    binding.pry
+    #binding.pry
     DB[:conn].execute(sql, x)
     
   end
