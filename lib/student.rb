@@ -1,6 +1,6 @@
 require 'pry'
 
-lass Student
+Class Student
   attr_accessor :id, :name, :grade
 
   def self.new_from_db(row)
